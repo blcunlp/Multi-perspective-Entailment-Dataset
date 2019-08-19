@@ -5,14 +5,18 @@
 
 ## Data
 
-The Annotated Multi-perspective Entailment Dataset can be downloaded at [here](https://)
+The Annotated Multi-perspective Entailment Dataset can be downloaded at [here](https://github.com/blcunlp/Multi-perspective-Entailment-Dataset/blob/master/Multi-perspective-Entailment-Dataset-CCL%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE-final.xlsx)
 
 Each line in the excel file corresponds to an instance, and it is arranged as：  
->premise hypothesis 4-category-labels entailment-label 4-model-labels.
+>Premise Hypothesis CR LP SS Discard.
 
-### 4-category-labels
+**Premise** and **Hypothesis** are entailment sentence pairs. 
 
-The kind of 4-category-labels can be clearly seen in the following table:
+From three levels, we divide the entailment types into three categories——Commonsense Reasoning(**CR**), Lexical and Phrasal Level(**LP**), Syntactic Structure(**SS**). Data without classification significance are given an "**Diacard**" label. There are also ten sub-categories under the three categories, which are represented numerically.
+
+The categories and sub-categories are not independent. When an instance has two sub-category labels, they are marked with "A/B/C-complex", abbreviated to "A/B/C-com".
+
+The categories can be clearly seen in the following table:
 
 |category |annotated lable| sub-category |annotated lable|
 |:-:|:-:|:-:|:-:|
@@ -28,11 +32,4 @@ The kind of 4-category-labels can be clearly seen in the following table:
 |  |  |ST(Syntactic Transformations)| C3 |
 | Diacard                           | D  |                            |    |
 
-From three levels, we divide the entailment types into three categories. Data without classification significance are given an "Diacard" label. There are also ten sub-categories under the three categories, which are represented numerically.
 
-The categories and sub-categories are not independent. When an instance has two sub-category labels, they are marked with "A/B/C-complex", abbreviated to "A/B/C-com".
-
-### entailment-label
-Our data comes from the entailment data of SNLI test set, so the "entailment-label" at file is shown as "True".
-
-### 4-model-labels
