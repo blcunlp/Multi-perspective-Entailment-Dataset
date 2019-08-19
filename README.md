@@ -30,6 +30,6 @@ The categories can be clearly seen in the following table:
 | SS(Syntactic Structure)           | C |Elli(Ellipsis)               | C1 |
 |  |  |Ext(Extraction)              | C2 |
 |  |  |ST(Syntactic Transformations)| C3 |
-| Diacard                           | D  |                            |    |
+| Discard                           | D  |                            |    |
 
 
